@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.lab12"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.lab12"
@@ -50,7 +50,7 @@ android {
 }
 
 dependencies {
-    // nuevas dependencias añadidas 
+    // nuevas dependencias añadidas
     val mapsComposeVersion = "4.4.1"
 
     // Google Maps Compose
@@ -58,6 +58,9 @@ dependencies {
 
     // Utilidades de Google Maps para Jetpack Compose
     implementation("com.google.maps.android:maps-compose-utils:$mapsComposeVersion")
+    // Widgets de Google Maps Compose
+    implementation("com.google.maps.android:maps-compose-widgets:$mapsComposeVersion")
+
 
 
     implementation(libs.androidx.core.ktx)
